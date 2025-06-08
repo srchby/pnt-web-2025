@@ -1,0 +1,192 @@
+/*  Imports  */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  Reset and Base  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1a15;
+  color: #94855f;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "EB Garamond", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+/*  Header  */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #94855f;
+  border-radius: 0.25rem;
+  gap: 10px;
+}
+
+.header .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.header .header-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.header i {
+  font-size: 32px;
+  margin: 0 15px;
+}
+
+/*  Main Content  */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topic-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#header-main {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/*  Cards  */
+.card-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-column,
+.card-row {
+  display: flex;
+  background-color: #271f16;
+  border: 1px solid #94855f;
+  border-radius: 0.25rem;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+
+.card-column {
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  margin: 25px;
+  padding-bottom: 25px;
+}
+
+.card-row {
+  flex-direction: row;
+  width: 90%;
+  height: 250px;
+  margin: 25px auto;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.card-column:hover,
+.card-row:hover {
+  background-color: #3a2f23;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px 20px 0 20px;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.card-description {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 10px 0 10px;
+  line-height: 1.4;
+}
+
+/*  Image Cards  */
+.image-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #94855f;
+}
+
+.image-card img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card-row {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #94855f;
+}
+
+.image-card-row img {
+  max-width: 720px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/*  Footer  */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 1px solid #94855f;
+  border-radius: 0.25rem;
+}
