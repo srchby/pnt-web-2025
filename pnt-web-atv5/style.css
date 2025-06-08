@@ -36,6 +36,7 @@ a {
 /*  Header  */
 .header {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -80,6 +81,13 @@ a {
   font-size: 48px;
   font-weight: bold;
   margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-main {
@@ -193,10 +201,31 @@ a {
 /*  Footer  */
 .footer {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   margin-top: auto;
-  border-top: 1px solid #94855f;
+  border-top: 1px solid #1e1a15;
+  background-color: #94855f;
+  color: #1e1a15;
   border-radius: 0.25rem;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-style: italic;
 }
