@@ -1,4 +1,49 @@
+* {
+  border: none;
+  text-decoration: none;
+}
 body {
-    background-color: #e0f7fa;
-    font-family: Arial;
+  background-color: #e0f7fa;
+  font-family: Arial;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+hr {
+  border: none;
+  background-color: grey;
+  height: 2px;
+}
+a {
+  text-decoration: underline;
+}
+.size-3 {
+  font-size: 30px;
+}
+.size-5 {
+  font-size: 50px;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+  text-decoration: red underline;
+}
+.magenta {
+  color: magenta;
+}
+.margin-left {
+  margin-left: 40px;
+}
+.flex-columns {
+  display: flex;
+  flex-direction: column;
 }
