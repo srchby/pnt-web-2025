@@ -3,11 +3,9 @@
   text-decoration: none;
 }
 body {
-  background-color: #e0f7fa;
   font-family: Arial;
 }
 h1 {
-  font-size: 3rem;
   text-align: center;
 }
 hr {
@@ -18,11 +16,36 @@ hr {
 a {
   text-decoration: underline;
 }
-.size-3 {
+table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+input, select, button, textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+}
+.size-30 {
   font-size: 30px;
 }
-.size-5 {
+.size-50 {
   font-size: 50px;
+}
+.size-20 {
+  font-size: 20px;
 }
 .blue {
   color: blue;
@@ -35,10 +58,15 @@ a {
 }
 .red {
   color: red;
+}
+.red-underline {
   text-decoration: red underline;
 }
 .magenta {
   color: magenta;
+}
+.brown {
+  color: brown;
 }
 .margin-left {
   margin-left: 40px;
@@ -46,4 +74,30 @@ a {
 .flex-columns {
   display: flex;
   flex-direction: column;
+}
+.center-text {
+  text-align: center;
+}
+.inp-txt {
+  border: 2px black solid;
+  border-style: inset;
+}
+.btn {
+  border-style: outset;
+}
+.progress-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.checked-tr:nth-child(even) {
+  background-color: grey;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

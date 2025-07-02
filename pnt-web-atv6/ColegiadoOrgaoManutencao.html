@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Manutenção do Órgão Colegiado</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Colegiado UNESP</h3>
+      <p><strong>Manutenção do Órgão Colegiado</strong></p>
+
+      <table>
+        <tr>
+          <td>Unidade</td>
+          <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+        </tr>
+        <tr>
+          <td>Tipo Colegiado</td>
+          <td>CONGREGAÇÃO</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td>Órgão Colegiado</td>
+        </tr>
+        <tr>
+          <td class="center-flex">
+            <fieldset>
+              <div>
+                <label>Nome:</label>
+                <input
+                  type="text"
+                  value="CONGREGAÇÃO DA FACULDADE DE ILHA SOLTEIRA"
+                  class="inp-txt"
+                />
+              </div>
+
+              <div>
+                <label>Sigla:</label>
+                <input type="text" value="CFIS" class="inp-txt" />
+                <label>Status:</label>
+                <select class="btn">
+                  <option>ATIVADO</option>
+                  <option>DESATIVADO</option>
+                </select>
+              </div>
+
+              <div>
+                <label>Data Ativação:</label>
+                <input type="text" value="15/10/2000" class="inp-txt" />
+                <label>Data Desativação:</label>
+                <input type="text" class="inp-txt" />
+              </div>
+
+              <div>
+                <label>Órgão de Origem:</label>
+                <input type="text" class="inp-txt" />
+                <input type="button" value="Buscar" class="btn" />
+              </div>
+
+              <div>
+                <label>Órgão Superior:</label>
+                <input type="text" class="inp-txt" />
+                <input type="button" value="Buscar" class="btn" />
+              </div>
+
+              <div class="column">
+                <label>Documentação:</label>
+                <textarea class="inp-txt">
+Órgão criado com o objetivo de aprovar normas da unidade.</textarea
+                >
+              </div>
+
+              <div>
+                <input type="submit" value="Salvar" class="btn progress-btn" />
+                <input type="button" value="Excluir" class="btn progress-btn" />
+              </div>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+
+      <div class="center-flex">
+        <input type="button" value="Retornar" class="btn" />
+      </div>
+    </div>
+  </body>
+</html>
