@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <link rel="stylesheet" href="style.css">
     <title>Curso HTML</title>
-</head>
-<body>
-<frameset rows="90%,10%" frameborder="1" border="1">
-    <frameset cols="20%,80%">
-        <frame src="menu.html" name="menu">
-        <frame src="principal.html" name="main">
-    </frameset>
-    <frame src="rodape.html" name="footer">
-</frameset>
-</body>
+  </head>
+  <body>
+    <!--FRAMESET NÃO ESTÁ FUNCIONANDO MAIS EM NAVEGADORES MODERNOS-->
+      <div class="menu">
+        <iframe src="menu.html" name="menu"></iframe>
+      </div>
+      <div class="main">
+        <iframe src="principal.html" name="principal"></iframe>
+      </div>
+      <div class="footer">
+        <iframe src="rodape.html" name="rodape"></iframe>
+      </div>
+  </body>
 </html>
