@@ -31,7 +31,10 @@ th {
   text-align: left;
   padding: 8px;
 }
-input, select, button, textarea {
+input,
+select,
+button,
+textarea {
   margin-top: 10px;
   margin-bottom: 10px;
 }
