@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        fieldset {
+            border: 1;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }
+
+        label,
+        input,
+        select {
+            margin: 0.25rem;
+        }
+        
+        input,
+        textarea,
+        select {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: blue;
+        }
+
+        div {
+            align-content: center;
+        }
+        
+        .final{
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="get" class="form">
+        <div>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">Nome:</label> <input type="text" id="name" required><br>
+                <label for="address">Endereço:</label> <input type="text" id="address" required><br>
+                <label for="city">Cidade:</label><input type="text" id="city" required><br>
+                <label for="state">Estado:</label> <select name="state" id="state">
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label for="job">Natureza do cargo</label><br>
+                <input type="radio" id="gerencia" name="job" value="job" required>
+                <label for="gerencia">Gerência</label>
+                <input type="radio" id="Financeiro" name="job" value="job" required>
+                <label for="Financeiro">Financeiro</label>
+                <input type="radio" id="Recepção" name="job" value="job" required>
+                <label for="Recepção">Recepção</label>
+                <input type="radio" id="Administrativo" name="job" value="job" required>
+                <label for="Administrativo">Administrativo</label>
+                <input type="radio" id="Jurídico" name="job" value="job" required>
+                <label for="Jurídico">Jurídico</label><br>
+
+                <legend>Área de interesse</legend>
+                <input type="checkbox" id="Computação" name="interest" value="interest" required>
+                <label for="Computação">Computação</label>
+                <input type="checkbox" id="Biologia" name="interest" value="interest" required>
+                <label for="Biologia">Biologia</label>
+                <input type="checkbox" id="Meio Ambiente" name="interest" value="interest" required>
+                <label for="Meio Ambiente">Meio Ambiente</label>
+                <input type="checkbox" id="Engenharia" name="interest" value="interest" required>
+                <label for="Engenharia">Engenharia</label>
+                <input type="checkbox" id="História" name="interest" value="interest" required>
+                <label for="História">História</label><br>
+                <label for="comment">Mini-currículo</label>
+                <textarea name="comment" id="comment" rows="5" cols="33"></textarea><br>
+            </fieldset>
+            <input type="submit" value="Enviar" class="final">
+            <input type="reset" value="Limpar" class="final">
+        </div>
+    </form>
+</body>
+
+</html>
