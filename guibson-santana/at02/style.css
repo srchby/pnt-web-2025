@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-image {
+  background-image: url(assets/Ribera-Platon-Amiens.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+}
+
+body {
+  background-color: #2b3035;
+}
