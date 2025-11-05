@@ -1,5 +1,4 @@
 // Leandro Cordeiro de Fariax
-
 function horseshoesByHorses(horses) {
     return horses * 4;
 }
